@@ -1,0 +1,77 @@
+00001000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 19/01/2022 16:31:36
+
+Line 1 ERROR: Illegal symbol
+00000000                             1  00001000 Starting Address
+Line 2 ERROR: Invalid syntax
+00000000                             2  Assembler used: EASy68K Editor/Assembler v5.16.01
+Line 3 ERROR: Invalid syntax
+00000000                             3  Created On: 19/01/2022 16:31:29
+00000000                             4  
+Line 5 ERROR: Illegal symbol
+00000000                             5  00000000                             1  
+Line 6 ERROR: Illegal symbol
+00000000                             6  00001000                             2      ORG    $1000
+Line 7 ERROR: Illegal symbol
+00000000                             7  00001000                             3  START:                  ; first instruction of program
+Line 8 ERROR: Illegal symbol
+00000000                             8  00001000                             4  
+Line 9 ERROR: Illegal symbol
+00000000                             9  00001000= 10                         5      dc.b $10
+Line 10 ERROR: Illegal symbol
+00000000                            10  00001002  3478 0100                  6      MOVE $100,A2
+Line 11 ERROR: Invalid opcode
+00000000                            11  Line 7 ERROR: Comma expected
+Line 12 ERROR: Illegal symbol
+00000000                            12  00001006                             7      ADD.L  #5+A2
+Line 13 ERROR: Invalid opcode
+00000000                            13  Line 8 ERROR: Comma expected
+Line 14 ERROR: Illegal symbol
+00000000                            14  00001006                             8      SUB  #5-A2
+Line 15 ERROR: Invalid opcode
+00000000                            15  Line 9 ERROR: Comma expected
+Line 16 ERROR: Illegal symbol
+00000000                            16  00001006                             9      MULS #5+A2
+Line 17 ERROR: Invalid opcode
+00000000                            17  Line 10 ERROR: Comma expected
+Line 18 ERROR: Illegal symbol
+00000000                            18  00001006                            10      DIVS #2+A2
+Line 19 ERROR: Illegal symbol
+00000000                            19  00001006                            11      
+Line 20 ERROR: Illegal symbol
+00000000                            20  00001006                            12      
+Line 21 ERROR: Illegal symbol
+00000000                            21  00001006  FFFF FFFF                 13      SIMHALT             ; halt simulator
+Line 22 ERROR: Illegal symbol
+00000000                            22  0000100A                            14  
+Line 23 ERROR: Illegal symbol
+00000000                            23  0000100A                            15  * Put variables and constants here
+Line 24 ERROR: Illegal symbol
+00000000                            24  0000100A                            16  
+Line 25 ERROR: Illegal symbol
+00000000                            25  0000100A                            17      END    START        ; last line of source
+00000000                            26  
+Line 27 ERROR: Illegal symbol
+00000000                            27  4 errors detected
+Line 28 ERROR: Invalid opcode
+00000000                            28  No warnings generated
+00000000                            29  
+00000000                            30  
+Line 31 ERROR: Invalid opcode
+00000000                            31  SYMBOL TABLE INFORMATION
+Line 32 ERROR: Invalid opcode
+00000000                            32  Symbol-name         Value
+Line 33 ERROR: Illegal symbol
+00000000                            33  -------------------------
+Line 34 ERROR: Invalid opcode
+00000000                            34  START               1000
+Line 35 WARNING: END directive missing, starting address not set
+
+30 errors detected
+1 warning generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
