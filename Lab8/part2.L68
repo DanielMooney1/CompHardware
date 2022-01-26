@@ -1,0 +1,36 @@
+00001000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 26/01/2022 16:48:37
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Title      :
+00000000                             3  * Written by :
+00000000                             4  * Date       :
+00000000                             5  * Description:
+00000000                             6  *-----------------------------------------------------------
+00001000                             7      ORG    $1000
+00001000                             8  START:                  ; first instruction of program
+00001000                             9        
+00001000  43F9 00001012             10        LEA MESSAGE,A1 
+00001006  347C 000E                 11        MOVE #14,A2
+0000100A  303C 0002                 12        MOVE  #2,D0
+0000100E  D4C0                      13        ADD   D0,A2
+00001010  94C0                      14        SUB   D0,A2
+00001012                            15       ; MULU  A2,D0
+00001012                            16       ; DIVU  A2,D0
+00001012                            17        
+00001012= 24 31 30 00               18  MESSAGE DC.B '$10',0 
+00001016                            19          
+00001016  FFFF FFFF                 20       SIMHALT ; halt simulator
+0000101A                            21  
+0000101A                            22      END    START        ; last line of source
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+MESSAGE             1012
+START               1000

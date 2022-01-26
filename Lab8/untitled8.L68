@@ -1,0 +1,41 @@
+00001000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 26/01/2022 16:10:59
+
+00001000                             1    ORG    $1000
+00001000                             2  START:    
+00001000                             3  
+00001000  223C 00343CCA              4      MOVE.L #3423434, D1 # MOVE A VALUE INTO D1 L (LONG)
+00001006                             5      
+00001006  103C 0003                  6      MOVE.B #3, D0 #MOVE 3 INTO D0
+0000100A  4E4F                       7      TRAP   #15 # LOOK IN DO AND PERFORM THE INTERUPT OPERATION
+0000100C                             8      
+0000100C                             9      
+0000100C  103C 0004                 10      MOVE.B  #4, D0
+00001010  4E4F                      11      TRAP    #15
+00001012                            12  
+00001012  103C 0003                 13      MOVE.B #3, D0 #MOVE 3 INTO D0
+00001016  4E4F                      14      TRAP   #15 # LOOK IN DO AND PERFORM THE INTERUPT OPERATION
+00001018                            15      
+00001018  163C 0002                 16      MOVE.B  #2, D3
+0000101C  183C 0003                 17      MOVE.B  #3, D4
+00001020  D843                      18      ADD D3, D4
+00001022                            19      
+00001022  1204                      20      MOVE.B  D4, D1
+00001024                            21      
+00001024  103C 0003                 22      MOVE.B #3, D0 #MOVE 3 INTO D0
+00001028  4E4F                      23      TRAP   #15 # LOOK IN DO AND PERFORM THE INTERUPT OPERATION
+0000102A                            24      
+0000102A                            25  
+0000102A                            26  
+0000102A  FFFF FFFF                 27      SIMHALT            
+0000102E                            28      END    START 
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+START               1000
